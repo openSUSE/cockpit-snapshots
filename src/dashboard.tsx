@@ -1,9 +1,9 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useState } from 'react';
 
 import { Button, DropdownItem, PageSection, Stack } from '@patternfly/react-core';
 import { Card, CardBody, CardHeader, CardTitle } from "@patternfly/react-core/dist/esm/components/Card/index.js";
 import { KebabDropdown } from "cockpit-components-dropdown";
-import { ListingTable, ListingTableRowProps } from "cockpit-components-table.jsx";
+import { ListingTable, ListingTableRowProps, RowRecord } from "cockpit-components-table.jsx";
 import cockpit from 'cockpit';
 
 import { Config, Snapshot } from './types';
@@ -14,6 +14,7 @@ const _ = cockpit.gettext;
 
 export const DashboardPage = ({ hasSndiff, snapperConfigs, snapshots, snapshotsPaired }: {hasSndiff: boolean, snapperConfigs: Config[], snapshots: Snapshot[], snapshotsPaired: ([Snapshot, Snapshot] | [Snapshot])[]}) => {
     const Dialogs = useDialogs();
+    const [expandedRows, setExpandedRows] = useState<RowRecord>({});
 
     const rollback = useCallback((snapshot: number) => {
         console.log("rolling back to", snapshot);
@@ -62,6 +63,7 @@ export const DashboardPage = ({ hasSndiff, snapperConfigs, snapshots, snapshotsP
                     </CardHeader>
                     <CardBody>
                         <ListingTable
+                            onExpand={(rows) => setExpandedRows(rows)}
                             columns={[
                                 { title: "ID" },
                                 { title: "Type" },
@@ -69,7 +71,8 @@ export const DashboardPage = ({ hasSndiff, snapperConfigs, snapshots, snapshotsP
                                 { title: "Description" },
                                 { title: "User Data" },
                                 { title: "Actions" },
-                            ]} rows={snapshotsPaired.reduce((reduced_snapshots: ListingTableRowProps[], pairs: [Snapshot, Snapshot] | [Snapshot]) => {
+                            ]}
+                            rows={snapshotsPaired.reduce((reduced_snapshots: ListingTableRowProps[], pairs: [Snapshot, Snapshot] | [Snapshot]) => {
                                 const actions = (
                                     <KebabDropdown
                                         toggleButtonId="snapshot-actions"
@@ -114,7 +117,7 @@ export const DashboardPage = ({ hasSndiff, snapperConfigs, snapshots, snapshotsP
                                         props: { key: pre.number + "-" + post.number },
                                     };
                                     if (hasSndiff) {
-                                        element.expandedContent = <SnapshotDiff pre_snapshot={pre.number} post_snapshot={post.number} />;
+                                        element.expandedContent = <SnapshotDiff pre_snapshot={pre.number} post_snapshot={post.number} load={expandedRows[pre.number + "-" + post.number] !== undefined} />;
                                     }
                                     reduced_snapshots.push(element);
                                 } else {

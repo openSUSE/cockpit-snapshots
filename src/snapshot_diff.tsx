@@ -15,9 +15,7 @@ const DiffDialog = ({ file, diff }: { file: string, diff: string }) => {
         <Modal
             title={file} variant="medium" onClose={() => Dialogs.close()} isOpen
         >
-            <ModalHeader>
-                <p>{file}</p>
-            </ModalHeader>
+            <ModalHeader title={file} />
             <ModalBody>
                 <pre style={{ maxWidth: "800px" }}>{diff}</pre>
             </ModalBody>
@@ -25,20 +23,22 @@ const DiffDialog = ({ file, diff }: { file: string, diff: string }) => {
     );
 };
 
-const SnapshotDiff = ({ pre_snapshot, post_snapshot }: { pre_snapshot: number, post_snapshot: number }) => {
+const SnapshotDiff = ({ pre_snapshot, post_snapshot, load = false }: { pre_snapshot: number, post_snapshot: number, load: boolean }) => {
     const Dialogs = useDialogs();
     const [modifiedPackages, setModifiedPackages] = useState<SnDiffModifiedPackages | null>(null);
     const [modifiedFiles, setModifiedFiles] = useState<SndiffModifiedFiles | null>(null);
     const [openAccordion, setOpenAccordion] = useState<string[]>([]);
 
     useEffect(() => {
+        if (!load)
+            return;
+
         setModifiedPackages(null);
         setModifiedFiles(null);
         cockpit.spawn(
             ["sndiff", "--json", pre_snapshot.toString(), post_snapshot.toString()], { err: "message", superuser: "require" }
         )
                         .then((output: string) => {
-                            console.log(output);
                             let jsonout: SndiffDiff;
                             try {
                                 jsonout = JSON.parse(output);
@@ -60,9 +60,8 @@ const SnapshotDiff = ({ pre_snapshot, post_snapshot }: { pre_snapshot: number, p
                             }
                             setModifiedPackages(jsonout.packages);
                             setModifiedFiles(jsonout.files);
-                            console.log(jsonout.files);
                         });
-    }, [post_snapshot, pre_snapshot]);
+    }, [post_snapshot, pre_snapshot, load]);
 
     const onAccordionToggle = (id: string) => {
         if (openAccordion.includes(id)) {
@@ -102,7 +101,6 @@ const SnapshotDiff = ({ pre_snapshot, post_snapshot }: { pre_snapshot: number, p
             emptyFiles = fileKeys.map((key) => (modifiedFiles[key] ?? []).length === 0);
         }
 
-        console.log(emptyPackages, emptyFiles);
         return emptyPackages.filter((i) => !i).length === 0 &&
             emptyFiles.filter((i) => !i).length === 0;
     };
@@ -192,6 +190,7 @@ const SnapshotDiffPage = ({ snapshot1, snapshot2, snapshots }: { snapshot1: numb
                         <SnapshotDiff
                             pre_snapshot={snapshot1}
                             post_snapshot={snapshot2}
+                            load
                         />
                     </CardBody>
                 </Card>
