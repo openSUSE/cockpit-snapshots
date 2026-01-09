@@ -13,7 +13,7 @@ PREFIX ?= /usr/local
 APPSTREAMFILE=org.opensuse.$(subst -,_,$(PACKAGE_NAME)).metainfo.xml
 VM_IMAGE=$(CURDIR)/test/images/$(TEST_OS)
 # stamp file to check for node_modules/
-NODE_MODULES_TEST=package-lock.json
+NODE_MODULES_TEST=node_modules/
 # one example file in dist/ from bundler to check if that already ran
 DIST_TEST=dist/manifest.json
 # one example file in pkg/lib to check if it was already checked out
@@ -32,7 +32,7 @@ COCKPIT_REPO_FILES = \
 	$(NULL)
 
 COCKPIT_REPO_URL = https://github.com/cockpit-project/cockpit.git
-COCKPIT_REPO_COMMIT = 3ef5485d4aaf9baa3051f4ceececdfcc1f339940 # 351 + 24 commits
+COCKPIT_REPO_COMMIT = 847d1017f3f1069c7c9552959ae1fc9e48bec07a # 353.1 + 45 commits
 
 $(COCKPIT_REPO_FILES): $(COCKPIT_REPO_STAMP)
 COCKPIT_REPO_TREE = '$(strip $(COCKPIT_REPO_COMMIT))^{tree}'
