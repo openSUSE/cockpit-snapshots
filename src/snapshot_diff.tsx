@@ -17,7 +17,26 @@ const DiffDialog = ({ file, diff }: { file: string, diff: string }) => {
         >
             <ModalHeader title={file} />
             <ModalBody>
-                <pre style={{ maxWidth: "800px" }}>{diff}</pre>
+                <pre style={{ maxWidth: "800px" }}>
+                    {diff.split("\n").map((line, index) => {
+                        const first_char = line.charAt(0);
+                        if (first_char === "-") {
+                            return (
+                                <p key={"diff-line-" + index} style={{ backgroundColor: "#cf222e" }}>
+                                    {line}
+                                </p>
+                            );
+                        } else if (first_char === "+") {
+                            return (
+                                <p key={"diff-line-" + index} style={{ backgroundColor: "#1a7f37" }}>
+                                    {line}
+                                </p>
+                            );
+                        }
+
+                        return (<p key={"diff-line-" + index}>{line}</p>);
+                    })}
+                </pre>
             </ModalBody>
         </Modal>
     );
