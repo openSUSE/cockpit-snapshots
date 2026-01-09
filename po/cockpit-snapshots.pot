@@ -1,0 +1,124 @@
+# #-#-#-#-#  cockpit-snapshots.js.pot (PACKAGE VERSION)  #-#-#-#-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# #-#-#-#-#  cockpit-snapshots.metainfo.pot (PACKAGE VERSION)  #-#-#-#-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"#-#-#-#-#  cockpit-snapshots.html.pot (PACKAGE_VERSION)  #-#-#-#-#\n"
+"Project-Id-Version: PACKAGE_VERSION\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Cockpit html2po\n"
+"#-#-#-#-#  cockpit-snapshots.js.pot (PACKAGE VERSION)  #-#-#-#-#\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-21 09:03+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"#-#-#-#-#  cockpit-snapshots.manifest.pot (PACKAGE_VERSION)  #-#-#-#-#\n"
+"Project-Id-Version: PACKAGE_VERSION\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Cockpit manifest2po\n"
+"#-#-#-#-#  cockpit-snapshots.metainfo.pot (PACKAGE VERSION)  #-#-#-#-#\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-15 09:51+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: org.opensuse.cockpit_snapshots.metainfo.xml:6
+#: org.opensuse.cockpit_snapshots.metainfo.xml:8
+msgid "A cockpit module for managing snapper snapshots"
+msgstr ""
+
+#: src/snapshot_diff.tsx:153
+msgid "Added Files"
+msgstr ""
+
+#: src/snapshot_diff.tsx:129
+msgid "Added Packages"
+msgstr ""
+
+#: src/index.html:20
+msgid "Cockpit Snapshots"
+msgstr ""
+
+#: src/compare_dialog.tsx:38 src/compare_dialog.tsx:72 src/dashboard.tsx:56
+#: src/snapshot_diff.tsx:185
+msgid "Compare Snapshots"
+msgstr ""
+
+#: src/snapshot_diff.tsx:123
+msgid "Downgraded Packages"
+msgstr ""
+
+#: src/snapshot_diff.tsx:142
+msgid "Modified Files"
+msgstr ""
+
+#: src/snapshot_diff.tsx:115
+msgid "No changes found"
+msgstr ""
+
+#: src/compare_dialog.tsx:46 src/compare_dialog.tsx:59
+msgid "Please select a value"
+msgstr ""
+
+#: src/snapshot_diff.tsx:159
+msgid "Removed Files"
+msgstr ""
+
+#: src/snapshot_diff.tsx:135
+msgid "Removed Packages"
+msgstr ""
+
+#: src/dashboard.tsx:80
+msgid "Rollback to post"
+msgstr ""
+
+#: src/dashboard.tsx:79
+msgid "Rollback to pre"
+msgstr ""
+
+#: src/dashboard.tsx:83
+msgid "Rollback to snapshot"
+msgstr ""
+
+#: src/dashboard.tsx:30
+msgid "Snapshot Configs"
+msgstr ""
+
+#: src/dashboard.tsx:61 src/snapshot_diff.tsx:175 src/snapshot_diff.tsx:189
+#: src/manifest.json:0 org.opensuse.cockpit_snapshots.metainfo.xml:5
+msgid "Snapshots"
+msgstr ""
+
+#: src/snapshot_diff.tsx:117
+msgid "Updated Packages"
+msgstr ""
+
+#: src/compare_dialog.tsx:54
+msgid "With"
+msgstr ""
