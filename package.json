@@ -26,7 +26,7 @@
     "esbuild": "0.27.2",
     "esbuild-sass-plugin": "3.6.0",
     "esbuild-wasm": "0.27.2",
-    "eslint": "8.57.1",
+    "eslint": "9.39.2",
     "eslint-config-standard": "17.1.0",
     "eslint-config-standard-jsx": "11.0.0",
     "eslint-config-standard-react": "13.0.0",
