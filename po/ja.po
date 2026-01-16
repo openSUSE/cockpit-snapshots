@@ -26,56 +26,77 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 5.15.1\n"
 
+#: org.opensuse.cockpit_snapshots.metainfo.xml:6
+#: org.opensuse.cockpit_snapshots.metainfo.xml:8
 msgid "A cockpit module for managing snapper snapshots"
 msgstr "snapper によるスナップショットを管理するための Cockpit モジュール"
 
+#: src/snapshot_diff.tsx:170
 msgid "Added Files"
 msgstr "追加されたファイル"
 
+#: src/snapshot_diff.tsx:146
 msgid "Added Packages"
 msgstr "追加されたパッケージ"
 
+#: src/index.html:20
 msgid "Cockpit Snapshots"
 msgstr "Cockpit スナップショット"
 
+#: src/compare_dialog.tsx:38 src/compare_dialog.tsx:72 src/dashboard.tsx:57
+#: src/snapshot_diff.tsx:202
 msgid "Compare Snapshots"
 msgstr "スナップショット間の比較"
 
+#: src/snapshot_diff.tsx:140
 msgid "Downgraded Packages"
 msgstr "ダウングレードされたパッケージ"
 
+#: src/snapshot_diff.tsx:159
 msgid "Modified Files"
 msgstr "修正されたファイル"
 
+#: src/snapshot_diff.tsx:132
 msgid "No changes found"
 msgstr "変更点が見つかりません"
 
+#: src/compare_dialog.tsx:46 src/compare_dialog.tsx:59
 msgid "Please select a value"
 msgstr "値を選択してください"
 
+#: src/snapshot_diff.tsx:176
 msgid "Removed Files"
 msgstr "削除されたファイル"
 
+#: src/snapshot_diff.tsx:152
 msgid "Removed Packages"
 msgstr "削除されたパッケージ"
 
+#: src/dashboard.tsx:83
 msgid "Rollback to post"
 msgstr "事後の状態に戻す"
 
+#: src/dashboard.tsx:82
 msgid "Rollback to pre"
 msgstr "事前の状態に戻す"
 
+#: src/dashboard.tsx:86
 msgid "Rollback to snapshot"
 msgstr "スナップショットの状態に戻す"
 
+#: src/dashboard.tsx:31
 msgid "Snapshot Configs"
 msgstr "スナップショットの設定"
 
+#: src/dashboard.tsx:62 src/snapshot_diff.tsx:192 src/snapshot_diff.tsx:206
+#: src/manifest.json:0 org.opensuse.cockpit_snapshots.metainfo.xml:5
 msgid "Snapshots"
 msgstr "スナップショット"
 
+#: src/snapshot_diff.tsx:134
 msgid "Updated Packages"
 msgstr "更新されたパッケージ"
 
+#: src/compare_dialog.tsx:54
 msgid "With"
 msgstr "と"

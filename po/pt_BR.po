@@ -25,56 +25,77 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Cockpit manifest2po\n"
 
+#: org.opensuse.cockpit_snapshots.metainfo.xml:6
+#: org.opensuse.cockpit_snapshots.metainfo.xml:8
 msgid "A cockpit module for managing snapper snapshots"
 msgstr ""
 
+#: src/snapshot_diff.tsx:170
 msgid "Added Files"
 msgstr ""
 
+#: src/snapshot_diff.tsx:146
 msgid "Added Packages"
 msgstr ""
 
+#: src/index.html:20
 msgid "Cockpit Snapshots"
 msgstr ""
 
+#: src/compare_dialog.tsx:38 src/compare_dialog.tsx:72 src/dashboard.tsx:57
+#: src/snapshot_diff.tsx:202
 msgid "Compare Snapshots"
 msgstr ""
 
+#: src/snapshot_diff.tsx:140
 msgid "Downgraded Packages"
 msgstr ""
 
+#: src/snapshot_diff.tsx:159
 msgid "Modified Files"
 msgstr ""
 
+#: src/snapshot_diff.tsx:132
 msgid "No changes found"
 msgstr ""
 
+#: src/compare_dialog.tsx:46 src/compare_dialog.tsx:59
 msgid "Please select a value"
 msgstr ""
 
+#: src/snapshot_diff.tsx:176
 msgid "Removed Files"
 msgstr ""
 
+#: src/snapshot_diff.tsx:152
 msgid "Removed Packages"
 msgstr ""
 
+#: src/dashboard.tsx:83
 msgid "Rollback to post"
 msgstr ""
 
+#: src/dashboard.tsx:82
 msgid "Rollback to pre"
 msgstr ""
 
+#: src/dashboard.tsx:86
 msgid "Rollback to snapshot"
 msgstr ""
 
+#: src/dashboard.tsx:31
 msgid "Snapshot Configs"
 msgstr ""
 
+#: src/dashboard.tsx:62 src/snapshot_diff.tsx:192 src/snapshot_diff.tsx:206
+#: src/manifest.json:0 org.opensuse.cockpit_snapshots.metainfo.xml:5
 msgid "Snapshots"
 msgstr ""
 
+#: src/snapshot_diff.tsx:134
 msgid "Updated Packages"
 msgstr ""
 
+#: src/compare_dialog.tsx:54
 msgid "With"
 msgstr ""

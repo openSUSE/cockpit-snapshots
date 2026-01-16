@@ -26,56 +26,77 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 5.15.1\n"
 
+#: org.opensuse.cockpit_snapshots.metainfo.xml:6
+#: org.opensuse.cockpit_snapshots.metainfo.xml:8
 msgid "A cockpit module for managing snapper snapshots"
 msgstr "Ein Cockpit-Modul zum Verwalten von snapper-Schnappschüssen"
 
+#: src/snapshot_diff.tsx:170
 msgid "Added Files"
 msgstr "Hinzugefügte Dateien"
 
+#: src/snapshot_diff.tsx:146
 msgid "Added Packages"
 msgstr "Hinzugefügte Pakete"
 
+#: src/index.html:20
 msgid "Cockpit Snapshots"
 msgstr "Cockpit-Schnappschüsse"
 
+#: src/compare_dialog.tsx:38 src/compare_dialog.tsx:72 src/dashboard.tsx:57
+#: src/snapshot_diff.tsx:202
 msgid "Compare Snapshots"
 msgstr "Schnappschüsse vergleichen"
 
+#: src/snapshot_diff.tsx:140
 msgid "Downgraded Packages"
 msgstr "Herabgestufte Pakete"
 
+#: src/snapshot_diff.tsx:159
 msgid "Modified Files"
 msgstr "Geänderte Dateien"
 
+#: src/snapshot_diff.tsx:132
 msgid "No changes found"
 msgstr "Keine Änderungen gefunden"
 
+#: src/compare_dialog.tsx:46 src/compare_dialog.tsx:59
 msgid "Please select a value"
 msgstr "Bitte wählen Sie einen Wert aus"
 
+#: src/snapshot_diff.tsx:176
 msgid "Removed Files"
 msgstr "Entfernte Dateien"
 
+#: src/snapshot_diff.tsx:152
 msgid "Removed Packages"
 msgstr "Entfernte Pakete"
 
+#: src/dashboard.tsx:83
 msgid "Rollback to post"
 msgstr "Zurückrollen zum Stand danach"
 
+#: src/dashboard.tsx:82
 msgid "Rollback to pre"
 msgstr "Zurückrollen zum Stand davor"
 
+#: src/dashboard.tsx:86
 msgid "Rollback to snapshot"
 msgstr "Zurückrollen zum Schnappschuss"
 
+#: src/dashboard.tsx:31
 msgid "Snapshot Configs"
 msgstr "Schnappschuss-Konfigurationen"
 
+#: src/dashboard.tsx:62 src/snapshot_diff.tsx:192 src/snapshot_diff.tsx:206
+#: src/manifest.json:0 org.opensuse.cockpit_snapshots.metainfo.xml:5
 msgid "Snapshots"
 msgstr "Schnappschüsse"
 
+#: src/snapshot_diff.tsx:134
 msgid "Updated Packages"
 msgstr "Aktualisierte Pakete"
 
+#: src/compare_dialog.tsx:54
 msgid "With"
 msgstr "Mit"
