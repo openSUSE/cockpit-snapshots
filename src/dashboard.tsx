@@ -12,6 +12,12 @@ import { useDialogs } from 'dialogs';
 import { CompareDialog } from './compare_dialog';
 const _ = cockpit.gettext;
 
+// numbers need to be padded with '0' to make them sortable as strings
+const idSortKey = (snapshots: Snapshot[], id: number): string => {
+    const snapsLen = Math.ceil(Math.log10(snapshots.length + 1));
+    return id.toString().padStart(snapsLen, "0");
+};
+
 const RollbackDialog = ({ type, message }: { type: "success" | "error", message?: string }) => {
     const Dialogs = useDialogs();
 
@@ -123,9 +129,9 @@ export const DashboardPage = ({ hasSndiff, snapperConfigs, snapshots, snapshotsP
                         <ListingTable
                             onExpand={(rows) => setExpandedRows(rows)}
                             columns={[
-                                { title: "ID" },
+                                { title: "ID", sortable: true },
                                 { title: "Type" },
-                                { title: "Date" },
+                                { title: "Date", sortable: true, },
                                 { title: "Description" },
                                 { title: "User Data" },
                                 { title: "Actions" },
@@ -154,12 +160,14 @@ export const DashboardPage = ({ hasSndiff, snapperConfigs, snapshots, snapshotsP
                                         columns: [
                                             {
                                                 title: pre.number + " - " + post.number + (post.active && post.default ? " (Active + Default)" : post.active ? " (Active)" : post.default ? " (Default)" : ""),
+                                                sortKey: idSortKey(snapshots, pre.number),
                                             },
                                             {
                                                 title: pre.type + " - " + post.type,
                                             },
                                             {
                                                 title: pre.date,
+                                                sortKey: pre.date,
                                             },
                                             {
                                                 title: pre.description,
@@ -172,7 +180,7 @@ export const DashboardPage = ({ hasSndiff, snapperConfigs, snapshots, snapshotsP
                                                 props: { className: "pf-v6-c-table__action" }
                                             }
                                         ],
-                                        props: { key: pre.number + "-" + post.number },
+                                        props: { key: "snapshot-table-" + pre.number + "-" + post.number },
                                     };
                                     if (hasSndiff) {
                                         element.expandedContent = <SnapshotDiff pre_snapshot={pre.number} post_snapshot={post.number} load={expandedRows[pre.number + "-" + post.number] !== undefined} />;
@@ -184,12 +192,14 @@ export const DashboardPage = ({ hasSndiff, snapperConfigs, snapshots, snapshotsP
                                         columns: [
                                             {
                                                 title: snapshot.number + (snapshot.active && snapshot.default ? " (Active + Default)" : snapshot.active ? " (Active)" : snapshot.default ? " (Default)" : ""),
+                                                sortKey: idSortKey(snapshots, snapshot.number),
                                             },
                                             {
                                                 title: snapshot.type,
                                             },
                                             {
                                                 title: snapshot.date,
+                                                sortKey: snapshot.date,
                                             },
                                             {
                                                 title: snapshot.description,
@@ -202,7 +212,7 @@ export const DashboardPage = ({ hasSndiff, snapperConfigs, snapshots, snapshotsP
                                                 props: { className: "pf-v6-c-table__action" }
                                             }
                                         ],
-                                        props: { key: snapshot.number }
+                                        props: { key: "snapshot-table-" + snapshot.number }
                                     });
                                 }
                                 return reduced_snapshots;
