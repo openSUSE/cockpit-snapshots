@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-22 14:08+0000\n"
+"POT-Creation-Date: 2026-03-02 11:26+0000\n"
 "PO-Revision-Date: 2026-01-24 16:04+0000\n"
 "Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
 "Language-Team: Indonesian <https://l10n.opensuse.org/projects/cockpit/"
@@ -31,7 +31,7 @@ msgstr ""
 msgid "A cockpit module for managing snapper snapshots"
 msgstr "Modul Cockpit untuk mengelola snapshot Snapper"
 
-#: src/dashboard.tsx:32
+#: src/dashboard.tsx:38
 msgid "A reboot is needed to complete the rollback"
 msgstr "Diperlukan reboot untuk menyelesaikan pengembalian"
 
@@ -47,7 +47,7 @@ msgstr "Paket yang ditambahkan"
 msgid "Cockpit Snapshots"
 msgstr "Snapshot Cockpit"
 
-#: src/compare_dialog.tsx:38 src/compare_dialog.tsx:72 src/dashboard.tsx:62
+#: src/compare_dialog.tsx:38 src/compare_dialog.tsx:72 src/dashboard.tsx:68
 #: src/snapshot_diff.tsx:230
 msgid "Compare Snapshots"
 msgstr "Bandingkan snapshot"
@@ -68,7 +68,7 @@ msgstr "Tidak ditemukan perubahan"
 msgid "Please select a value"
 msgstr "Silakan pilih nilai"
 
-#: src/dashboard.tsx:35
+#: src/dashboard.tsx:41
 msgid "Reboot"
 msgstr "Reboot"
 
@@ -80,32 +80,32 @@ msgstr "Berkas yang dihapus"
 msgid "Removed Packages"
 msgstr "Paket yang dihapus"
 
-#: src/dashboard.tsx:141
+#: src/dashboard.tsx:147
 msgid "Rollback to post"
 msgstr "Kembalikan ke pasca"
 
-#: src/dashboard.tsx:140
+#: src/dashboard.tsx:146
 msgid "Rollback to pre"
 msgstr "Kembalikan ke pra"
 
-#: src/dashboard.tsx:144
+#: src/dashboard.tsx:150
 msgid "Rollback to snapshot"
 msgstr "Kembalikan ke snapshot"
 
-#: src/dashboard.tsx:29
+#: src/dashboard.tsx:35
 msgid "Rolled back successfully"
 msgstr "Berhasil dikembalikan"
 
-#: src/dashboard.tsx:89
+#: src/dashboard.tsx:95
 msgid "Snapshot Configs"
 msgstr "Konfigurasi snapshot"
 
-#: src/dashboard.tsx:120 src/snapshot_diff.tsx:220 src/snapshot_diff.tsx:234
+#: src/dashboard.tsx:126 src/snapshot_diff.tsx:220 src/snapshot_diff.tsx:234
 #: src/manifest.json:0 org.opensuse.cockpit_snapshots.metainfo.xml:5
 msgid "Snapshots"
 msgstr "Snapshot"
 
-#: src/dashboard.tsx:29
+#: src/dashboard.tsx:35
 msgid "There was an error"
 msgstr "Terjadi kesalahan"
 
@@ -117,6 +117,6 @@ msgstr "Paket yang diperbarui"
 msgid "With"
 msgstr "Dengan"
 
-#: src/dashboard.tsx:74
+#: src/dashboard.tsx:80
 msgid "sndiff is not installed"
 msgstr "sndiff tidak terpasang"

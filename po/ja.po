@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-22 14:08+0000\n"
+"POT-Creation-Date: 2026-03-02 11:26+0000\n"
 "PO-Revision-Date: 2026-01-24 16:04+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://l10n.opensuse.org/projects/cockpit/cockpit-"
@@ -31,7 +31,7 @@ msgstr ""
 msgid "A cockpit module for managing snapper snapshots"
 msgstr "snapper によるスナップショットを管理するための Cockpit モジュール"
 
-#: src/dashboard.tsx:32
+#: src/dashboard.tsx:38
 msgid "A reboot is needed to complete the rollback"
 msgstr "巻き戻しを完了するには再起動が必要です"
 
@@ -47,7 +47,7 @@ msgstr "追加されたパッケージ"
 msgid "Cockpit Snapshots"
 msgstr "Cockpit スナップショット"
 
-#: src/compare_dialog.tsx:38 src/compare_dialog.tsx:72 src/dashboard.tsx:62
+#: src/compare_dialog.tsx:38 src/compare_dialog.tsx:72 src/dashboard.tsx:68
 #: src/snapshot_diff.tsx:230
 msgid "Compare Snapshots"
 msgstr "スナップショット間の比較"
@@ -68,7 +68,7 @@ msgstr "変更点が見つかりません"
 msgid "Please select a value"
 msgstr "値を選択してください"
 
-#: src/dashboard.tsx:35
+#: src/dashboard.tsx:41
 msgid "Reboot"
 msgstr "再起動"
 
@@ -80,32 +80,32 @@ msgstr "削除されたファイル"
 msgid "Removed Packages"
 msgstr "削除されたパッケージ"
 
-#: src/dashboard.tsx:141
+#: src/dashboard.tsx:147
 msgid "Rollback to post"
 msgstr "事後の状態に戻す"
 
-#: src/dashboard.tsx:140
+#: src/dashboard.tsx:146
 msgid "Rollback to pre"
 msgstr "事前の状態に戻す"
 
-#: src/dashboard.tsx:144
+#: src/dashboard.tsx:150
 msgid "Rollback to snapshot"
 msgstr "スナップショットの状態に戻す"
 
-#: src/dashboard.tsx:29
+#: src/dashboard.tsx:35
 msgid "Rolled back successfully"
 msgstr "巻き戻しが成功しました"
 
-#: src/dashboard.tsx:89
+#: src/dashboard.tsx:95
 msgid "Snapshot Configs"
 msgstr "スナップショットの設定"
 
-#: src/dashboard.tsx:120 src/snapshot_diff.tsx:220 src/snapshot_diff.tsx:234
+#: src/dashboard.tsx:126 src/snapshot_diff.tsx:220 src/snapshot_diff.tsx:234
 #: src/manifest.json:0 org.opensuse.cockpit_snapshots.metainfo.xml:5
 msgid "Snapshots"
 msgstr "スナップショット"
 
-#: src/dashboard.tsx:29
+#: src/dashboard.tsx:35
 msgid "There was an error"
 msgstr "エラーが発生しました"
 
@@ -117,6 +117,6 @@ msgstr "更新されたパッケージ"
 msgid "With"
 msgstr "と"
 
-#: src/dashboard.tsx:74
+#: src/dashboard.tsx:80
 msgid "sndiff is not installed"
 msgstr "sndiff がインストールされていません"
