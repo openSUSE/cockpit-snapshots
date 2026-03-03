@@ -183,7 +183,7 @@ export const DashboardPage = ({ hasSndiff, snapperConfigs, snapshots, snapshotsP
                                         props: { key: "snapshot-table-" + pre.number + "-" + post.number },
                                     };
                                     if (hasSndiff) {
-                                        element.expandedContent = <SnapshotDiff pre_snapshot={pre.number} post_snapshot={post.number} load={expandedRows[pre.number + "-" + post.number] !== undefined} />;
+                                        element.expandedContent = <SnapshotDiff pre_snapshot={pre.number} post_snapshot={post.number} load={expandedRows["snapshot-table-" + pre.number + "-" + post.number] !== undefined} />;
                                     }
                                     reduced_snapshots.push(element);
                                 } else {
