@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-01-13 09:39+0000\n"
-"PO-Revision-Date: 2026-10-15 20:13+0000\n"
+"PO-Revision-Date: 2026-10-18 15:13+0000\n"
 "Last-Translator: Eugene Krater <lachend@gmail.com>\n"
 "Language-Team: Ukrainian <https://l10n.opensuse.org/projects/cockpit/cockpit-"
 "snapshots/uk/>\n"
@@ -67,39 +67,39 @@ msgstr "Змін не знайдено"
 
 #: src/compare_dialog.tsx:46 src/compare_dialog.tsx:59
 msgid "Please select a value"
-msgstr ""
+msgstr "Будь ласка, оберіть значення"
 
 #: src/dashboard.tsx:41
 msgid "Reboot"
-msgstr ""
+msgstr "Перезапуск"
 
 #: src/snapshot_diff.tsx:204
 msgid "Removed Files"
-msgstr ""
+msgstr "Видалені файли"
 
 #: src/snapshot_diff.tsx:180
 msgid "Removed Packages"
-msgstr ""
+msgstr "Видалені пакунки"
 
 #: src/dashboard.tsx:147
 msgid "Rollback to post"
-msgstr ""
+msgstr "Повернутися до публікації"
 
 #: src/dashboard.tsx:146
 msgid "Rollback to pre"
-msgstr ""
+msgstr "Повернути до попереднього стану"
 
 #: src/dashboard.tsx:150
 msgid "Rollback to snapshot"
-msgstr ""
+msgstr "Повернення до знятка"
 
 #: src/dashboard.tsx:35
 msgid "Rolled back successfully"
-msgstr ""
+msgstr "Відкочено успішно"
 
 #: src/dashboard.tsx:95
 msgid "Snapshot Configs"
-msgstr ""
+msgstr "Налаштування знятка"
 
 #: src/dashboard.tsx:126 src/snapshot_diff.tsx:220 src/snapshot_diff.tsx:234
 #: src/manifest.json:0 org.opensuse.cockpit_snapshots.metainfo.xml:5
@@ -108,16 +108,16 @@ msgstr "Знімки"
 
 #: src/dashboard.tsx:35
 msgid "There was an error"
-msgstr ""
+msgstr "Сталася помилка"
 
 #: src/snapshot_diff.tsx:162
 msgid "Updated Packages"
-msgstr ""
+msgstr "Оновлені пакунки"
 
 #: src/compare_dialog.tsx:54
 msgid "With"
-msgstr ""
+msgstr "З"
 
 #: src/dashboard.tsx:80
 msgid "sndiff is not installed"
-msgstr ""
+msgstr "sndiff не встановлено"
